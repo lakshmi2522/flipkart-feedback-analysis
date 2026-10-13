@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flipkart | Feedback Insights</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><div class="logo">f</div><div><b>Flipkart <span>Feedback Insights</span></b><small>Customer Feedback Analysis System</small></div><label class="server">● Java-powered analysis</label></header>
+<main>
+<section class="hero"><div><p class="eyebrow">CUSTOMER EXPERIENCE TOOL</p><h1>Every review has<br><span>a story to tell.</span></h1><p>Analyze feedback in seconds. Count words, measure message length, and find the keywords that matter.</p></div><div class="art"><div>★★★★★<small>Customer voice</small></div><div>📦 <b>Feedback</b><small>Listen. Learn. Improve.</small></div></div></section>
+<section class="layout">
+<div class="panel"><h2>✎ &nbsp; Analyze feedback</h2><p class="muted">Enter the details below to get started.</p>
+<form id="form"><label for="name">Customer name</label><input id="name" name="customerName" placeholder="e.g. Rahul Sharma" required>
+<div class="row"><label for="feedback">Feedback message</label><small id="counter">0 / 500</small></div>
+<textarea id="feedback" name="feedback" rows="5" maxlength="1000" placeholder="Write or paste customer feedback here..." required></textarea><small class="muted">Feedback must contain 1–500 characters.</small>
+<label for="keyword">Keyword to search <i>(optional)</i></label><input id="keyword" name="keyword" placeholder="e.g. delivery">
+<button id="submit" type="submit">Analyze feedback <b>→</b></button><p id="message" role="status"></p></form></div>
+<div class="panel"><h2>▥ &nbsp; Analysis overview</h2><p class="muted">Your results will appear here.</p>
+<div id="empty" class="empty"><div class="search">⌕</div><h3>Ready when you are</h3><p>Submit feedback to see the analysis summary.</p></div>
+<div id="results" class="hidden"><div class="metrics"><div><small>CHARACTERS</small><strong id="chars">0</strong><em>Including spaces</em></div><div><small>WORDS</small><strong id="words">0</strong><em>Whitespace separated</em></div><div class="blue"><small>KEYWORD MATCHES</small><strong id="matches">0</strong><em id="keylabel">Keyword: —</em></div></div>
+<div class="preview"><div class="row"><b>Processed feedback</b><span class="done">✓ Complete</span></div><p id="customer" class="muted"></p><blockquote id="messageText"></blockquote></div><p id="searchNote" class="muted note"></p></div>
+</div></section><footer><span>Java Programming Micro Project</span><span>Educational demo • Not affiliated with Flipkart • Feedback is not saved</span></footer>
+</main><script src="script.js"></script></body></html>

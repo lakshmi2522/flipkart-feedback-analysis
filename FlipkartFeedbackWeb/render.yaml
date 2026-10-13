@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: flipkart-feedback-analysis
+    runtime: docker
+    plan: free
+    healthCheckPath: /
